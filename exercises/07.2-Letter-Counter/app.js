@@ -2,5 +2,14 @@ let par = "Lorem ipsum dolor sit amet consectetur adipiscing elit Curabitur eget
 let counts = {};
 
 // your code here
+var pa = par.replace(/ /g, "")
+for(var i = 0; i < pa.length;i++){
+    pa = pa.toLowerCase()
+    if(counts[pa[i]] == undefined ){
+        counts[pa[i]] = 1;
+    }else{
+       counts[pa[i]] += 1
+    }
 
+}
 console.log(counts);
