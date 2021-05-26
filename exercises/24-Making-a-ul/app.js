@@ -9,11 +9,20 @@ let allColors = [
 ];
 
 function generateLI(color){
-	// your code here
+    // your code here
+    for(var i = 0; i< color.label.length;i++){
+        return"<li>"+color.label+"</li>"
+    }
+	
 }
 
 function filterColors(color){
-	// your code here
+    	// your code here
+    for(var i = 0; i< color.label.length;i++){
+        if(color.sexy == true)
+            return color.label
+    }
+
 }
 
 function generateHTMLFromArray(array){
